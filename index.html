@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECC Classroom – Maharashtra Board Class 10 Practice</title>
+<meta name="description" content="ECC Classroom (Edutech Coaching Classes): Maharashtra Board SSC Class 10 (English Medium) preparation classroom: chapter notes, MCQ practice, board-pattern mock tests with timer, flashcards, formulas and paper guidance for Science, Maths, Social Science and English.">
+<style>
+  :root{
+    --bg:#0f172a; --bg2:#111c34; --card:#ffffff; --ink:#0f172a; --mut:#64748b;
+    --line:#e2e8f0; --acc:#f59e0b; --acc2:#ea580c; --ok:#16a34a; --bad:#dc2626;
+    --ind:#4f46e5; --teal:#0d9488; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{text-align:left;background:linear-gradient(180deg,#0f172a 0%,#16213f 340px,#f1f5f9 340px);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;margin:0;padding:0 12px 60px}
+  .wrap{max-width:1080px;margin:0 auto}
+  /* header */
+  .topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:16px 4px 12px;color:#fff;flex-wrap:wrap}
+  .brand{display:flex;gap:12px;align-items:center}
+  .logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#f59e0b,#ea580c);display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+  .brand h1{font-size:20px;margin:0;letter-spacing:.2px}
+  .brand p{margin:2px 0 0;font-size:12.5px;color:#cbd5e1}
+  .pillrow{display:flex;gap:8px;flex-wrap:wrap}
+  .pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+  .pill b{color:#fde68a}
+  /* tabs */
+  .tabs{position:sticky;top:0;z-index:5;background:rgba(15,23,42,.92);backdrop-filter:blur(8px);padding:10px 4px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid rgba(255,255,255,.12)}
+  .tab{white-space:nowrap;border:1px solid rgba(255,255,255,.2);background:transparent;color:#e2e8f0;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:700;cursor:pointer}
+  .tab.active{background:#f59e0b;border-color:#f59e0b;color:#1c1005}
+  /* cards */
+  .grid{display:grid;gap:12px}
+  .cols2{grid-template-columns:1fr 1fr}
+  .cols3{grid-template-columns:1fr 1fr 1fr}
+  @media(max-width:760px){.cols2,.cols3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:0 2px 10px rgba(15,23,42,.06)}
+  .card h2{margin:0 0 6px;font-size:17px}
+  .card h3{margin:12px 0 6px;font-size:14.5px}
+  .mut{color:var(--mut);font-size:13px}
+  .sec{display:none;margin-top:14px}
+  .sec.active{display:block}
+  .subj{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;background:#fff;transition:.15s}
+  .subj:hover{border-color:#f59e0b;transform:translateY(-1px)}
+  .subj.sel{outline:2px solid #f59e0b}
+  .dot{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;flex:none}
+  .bar{height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-top:8px}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,#f59e0b,#ea580c);border-radius:99px}
+  select,input[type=number]{padding:9px 10px;border-radius:10px;border:1px solid var(--line);font-size:14px;background:#fff;max-width:100%}
+  .btn{border:0;border-radius:10px;padding:10px 16px;font-weight:800;font-size:14px;cursor:pointer;background:var(--ind);color:#fff}
+  .btn.acc{background:linear-gradient(135deg,#f59e0b,#ea580c);color:#231303}
+  .btn.ghost{background:#f1f5f9;color:#0f172a}
+  .btn.ok{background:var(--ok)} .btn.bad{background:var(--bad)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
+  .chip.sel{background:#0f172a;color:#fff;border-color:#0f172a}
+  ul.tight{margin:6px 0;padding-left:20px} ul.tight li{margin:4px 0;font-size:14px}
+  .opt{display:block;width:100%;text-align:left;border:2px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;font-size:14.5px;cursor:pointer;background:#fff}
+  .opt:hover{border-color:#94a3b8}
+  .opt.picked{border-color:var(--ind);background:#eef2ff}
+  .opt.right{border-color:var(--ok);background:#f0fdf4}
+  .opt.wrong{border-color:var(--bad);background:#fef2f2}
+  .exp{border-left:4px solid var(--ok);background:#f0fdf4;padding:10px 12px;border-radius:0 10px 10px 0;font-size:13.5px;margin-top:8px}
+  .trap{border-left:4px solid var(--acc2);background:#fff7ed;padding:10px 12px;border-radius:0 10px 10px 0;font-size:13.5px;margin:6px 0}
+  .qmeta{font-size:12px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+  .timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;background:#0f172a;color:#fde68a;border-radius:10px;padding:6px 14px;display:inline-block}
+  .flash{perspective:900px;cursor:pointer;min-height:220px}
+  .flashInner{position:relative;transform-style:preserve-3d;transition:transform .45s;min-height:220px}
+  .flash.flip .flashInner{transform:rotateY(180deg)}
+  .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:26px;font-size:17px;text-align:center;border:2px solid var(--line);background:#fff}
+  .face.back{transform:rotateY(180deg);background:#0f172a;color:#fff;border-color:#0f172a;font-size:15px}
+  table.pat{width:100%;border-collapse:collapse;font-size:13.5px}
+  table.pat th,table.pat td{border:1px solid var(--line);padding:8px;text-align:left}
+  table.pat th{background:#f8fafc}
+  .kbd{background:#0f172a;color:#fde68a;border-radius:6px;padding:1px 7px;font-size:12.5px;font-weight:700}
+  .hero{background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1px solid #fed7aa}
+  .stat{background:#0f172a;color:#fff;border-radius:12px;padding:12px;text-align:center}
+  .stat b{font-size:22px;color:#fde68a;display:block}
+  .stat span{font-size:12px;color:#cbd5e1}
+  .foot{color:#94a3b8;font-size:12px;text-align:center;margin-top:22px}
+  a{color:#4f46e5}
+  /* offline printable chapter test */
+  #printPaper{max-width:1080px;margin:14px auto}
+  #printPaper[hidden]{display:none}
+  .prow{display:flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+  .sheet{background:#fff;color:#111;border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .sheet .shead{text-align:center;border-bottom:2px solid #111;padding-bottom:10px;margin-bottom:10px}
+  .sheet .s1{font-size:12px;font-weight:700;letter-spacing:.4px}
+  .sheet .s2{font-size:17px;font-weight:800;margin:4px 0}
+  .sheet .s3{display:flex;gap:18px;justify-content:center;font-size:13.5px;margin:4px 0}
+  .sheet .sfill{font-size:13px;margin-top:8px;text-align:left}
+  .sheet .srule{font-size:12.5px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px;margin:10px 0}
+  .sheet .sq{margin:12px 0;font-size:13.5px}
+  .sheet .sq ol{margin:6px 0;padding-left:22px}
+  .sheet .sq li{margin:5px 0}
+  .sheet .sopt{font-size:13px}
+  .sheet .smut{color:#475569;font-size:12.5px}
+  .sheet table.st{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  .sheet table.st th,.sheet table.st td{border:1px solid #111;padding:6px;text-align:center}
+  .sheet .key{background:#f8fafc;border:1px dashed #94a3b8;border-radius:8px;padding:10px 12px}
+  .sheet .stopper{font-size:12.5px;background:#fffbeb;border:1px solid #f59e0b;border-radius:8px;padding:8px 10px;margin:10px 0}
+  .sheet .key b{color:#000}
+  .sheet .sbreak{height:0}
+  /* board activity-sheet booklet */
+  .sheet.board{background:transparent;border:0;color:#000;font-family:Georgia,"Times New Roman",serif}
+  .bpage{background:#fff;color:#000;max-width:820px;margin:0 auto 26px;padding:46px 52px;box-shadow:0 12px 34px rgba(0,0,0,.35);border-radius:3px;position:relative}
+  .bpage.keysheet{background:#fffdf5}
+  /* Edutech ownership ink-stamp: sits IN FRONT of the page (not behind), 19% opacity */
+  .wmstamp{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;pointer-events:none;overflow:hidden}
+  .wmstamp img{width:74%;max-width:600px;opacity:.19;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .btop{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;font-weight:700;font-family:system-ui,sans-serif}
+  .seatline{font-size:12.5px;font-weight:700;margin-top:6px;font-family:system-ui,sans-serif;display:flex;align-items:center;gap:8px}
+  .seats{display:inline-flex;gap:4px}
+  .seats i{width:20px;height:24px;border:1.5px solid #000;display:inline-block;background:#fff}
+  .bhead{text-align:center;margin:12px 0 0;border:3px double #000;padding:14px 12px 12px}
+  .bh0{font-size:11px;font-weight:700;letter-spacing:2.5px;color:#444;font-family:system-ui,sans-serif}
+  .bh1{font-size:21px;font-weight:800;letter-spacing:.4px;margin-top:4px}
+  .bh2{font-size:15.5px;font-weight:800;margin-top:5px}
+  .bh3{font-size:14px;font-weight:800;margin-top:5px}
+  .btime{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin:10px 4px 0;padding:7px 2px 0;border-top:1px solid #000}
+  .bnote{font-size:13px;margin:14px 2px 0;line-height:1.55}
+  .bnote ol{margin:5px 0;padding-left:24px}
+  .bnote li{margin:3px 0}
+  .bq{margin:20px 0 0;font-size:14.5px;line-height:1.62}
+  .bqh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-weight:800;font-size:15px;border-bottom:2px solid #000;padding-bottom:5px;margin-bottom:6px}
+  .bm{font-weight:800;white-space:nowrap}
+  ol.bnum{margin:8px 0;padding-left:28px}
+  ol.bnum li{margin:11px 0}
+  .bopt{display:grid;grid-template-columns:1fr 1fr;gap:5px 28px;font-size:13.5px;margin-top:6px;line-height:1.5}
+  .bopt1{margin:8px 0}
+  .bpass{margin:10px 0 10px 24px;padding:12px 16px;border-left:3px solid #000;background:#fafafa;font-size:13.5px;line-height:1.65;text-align:justify}
+  .rawmod{white-space:pre-line}
+  .bdiag{margin:8px 0 0 22px;font-size:13.5px;line-height:1.6}
+  .bdiag span{display:inline-block;margin:3px 20px 0 0}
+  ol.bsub{margin:5px 0;padding-left:24px}
+  ol.bsub li{margin:4px 0}
+  ol.bsub1{margin:6px 0}
+  /* concept-map question (Q3): parent box, fork connector, two child boxes + dashed answer blanks */
+  .cmap{text-align:center;margin:12px auto 4px;max-width:560px}
+  .cbox{display:inline-block;border:2px solid #000;border-radius:9px;padding:6px 20px;font-weight:800;font-size:14px;background:#fff}
+  .ctop{position:relative}
+  .ctop::after{content:"";display:block;width:2px;height:12px;background:#000;margin:0 auto}
+  .cfork{border-top:2px solid #000;margin:0 25%;height:0}
+  .crow{display:flex;gap:24px;justify-content:center}
+  .ccol{flex:1;max-width:240px;position:relative;padding-top:12px}
+  .ccol::before{content:"";position:absolute;top:0;left:50%;width:2px;height:12px;background:#000}
+  .cblank{border:2px dashed #000;border-radius:9px;padding:7px 10px;margin-top:8px;font-size:13px;background:#fff}
+  table.btab{margin-top:8px}
+  .sheet table.st{font-size:13px;margin-top:6px}
+  .sheet table.st th,.sheet table.st td{padding:7px 9px}
+  .bor{text-align:center;font-weight:800;margin:14px 0;font-size:15.5px;letter-spacing:1px}
+  .bfoot{text-align:center;font-size:11.5px;letter-spacing:.6px;color:#333;border-top:1px solid #000;margin-top:30px;padding:9px 0 0;font-family:system-ui,sans-serif}
+  .bgen{font-family:system-ui,sans-serif}
+  .bcredit{text-align:center;font-size:10.5px;letter-spacing:.6px;color:#333;margin-top:10px;font-family:system-ui,sans-serif}
+  .bcredit-head{margin:10px 0 0}
+  .btop .bcredits{font-size:10.5px;font-weight:600;letter-spacing:.4px}
+  .wmprint{display:none}
+  /* ---- answer-key booklet ---- */
+  .keysheet{font-size:14.5px;line-height:1.62}
+  .keysheet .sq.key{background:transparent;border:0;padding:0}
+  .keysheet .sq.key > b:first-child{display:block;text-align:center;font-size:17px;letter-spacing:.5px;border:3px double #000;padding:11px 10px;margin:2px 0 4px}
+  .keysheet .stopper{background:#fffbeb;border:1.5px solid #b45309;border-radius:6px;padding:12px 16px;margin:14px 0;font-size:13.5px;line-height:1.6}
+  .keysheet div.smut{display:block;font-size:14.5px;font-weight:800;color:#000;border-bottom:2px solid #000;padding-bottom:4px;margin:20px 0 4px}
+  .keysheet span.smut{font-size:12.5px;color:#475569}
+  .keysheet ol{margin:8px 0 6px;padding-left:30px}
+  .keysheet ol > li{margin:11px 0}
+  .keysheet li ol{margin-top:6px}
+  .keysheet li ol li{margin:5px 0}
+  .keysheet .bq > b{display:block;font-size:15px;border-bottom:2px solid #000;padding-bottom:4px;margin-bottom:8px}
+  .keysheet ul.kpts{list-style:disc;margin:7px 0 3px 8px;padding-left:18px}
+  .keysheet ul.kpts li{margin:5px 0}
+  .fillbox{display:inline-block;min-width:24px;text-align:center;border:1.5px solid #166534;background:#f0fdf4;border-radius:5px;padding:0 6px;margin:0 2px;font-weight:700}
+  .fact{background:#f0fdf4;border:1px dashed #166534;border-radius:10px;padding:8px 10px;margin:6px 0;font-size:13.5px}
+  .qbox{display:inline-block;min-width:30px;height:20px;border:2px solid #0f172a;border-radius:3px;background:#fff;vertical-align:-4px;margin:0 3px}
+  .qfrac{display:inline-flex;flex-direction:column;align-items:stretch;vertical-align:middle;margin:0 4px;line-height:1.3}
+  .qfrac .qfnum{border-bottom:2px solid #0f172a;text-align:center;padding:0 6px}
+  .qfrac .qfden{text-align:center;padding:0 6px}
+  .qfrac .qbox{min-width:24px;height:18px;margin:1px auto}
+  .qfrac .fillbox{margin:1px auto}
+  @media print{ .fillbox{background:#f0fdf4!important;border-color:#166534!important} .fact{background:#f0fdf4!important} .qbox{border-color:#000!important;background:#fff!important} .qfrac .qfnum{border-color:#000!important} }
+  .keysheet table.st{font-size:13.5px;margin:10px 0 4px}
+  .keysheet table.st th,.keysheet table.st td{padding:8px 10px}
+  @media print{
+    @page{size:A4;margin:11mm 12mm}
+    .tabs,.topbar .pillrow,.noprint{display:none!important} body{background:#fff;padding:0 4px 0}
+    .wrap{display:none!important}
+    #printPaper{display:block!important;max-width:none;margin:0}
+    #printPaper[hidden]{display:block!important}
+    .sheet{border:0;border-radius:0;padding:0}
+    .sheet .shead{padding-bottom:5px;margin-bottom:5px}
+    .sheet .s1{font-size:10.5px}
+    .sheet .s2{font-size:14.5px;margin:2px 0}
+    .sheet .s3{font-size:12px;margin:2px 0}
+    .sheet .sfill{font-size:11.5px;margin-top:4px}
+    .sheet .srule{font-size:10.5px;padding:4px 7px;margin:5px 0}
+    .sheet .sq{margin:6px 0}
+    .sheet .sq ol{margin:2px 0;padding-left:19px}
+    .sheet .sq li{margin:1px 0}
+    .sheet .sopt{font-size:11.5px}
+    .sheet table.st{margin-top:4px}
+    .sheet table.st th,.sheet table.st td{padding:3px 5px}
+    .sheet .key{padding:6px 8px}
+    .sheet .stopper{padding:4px 7px;margin:5px 0}
+    .bpage{background:#fff;max-width:none;margin:0;padding:0;box-shadow:none;border-radius:0}
+    .bpage.brk{page-break-after:always}
+    .keysheet{page-break-before:always}
+    /* WYSIWYG print: question + key sheets print at the SAME type size you
+       read on screen (no shrinking). Only vertical spacing is tightened a
+       little so the page count stays economical. */
+    .bhead{padding:10px 10px 8px;margin-top:8px}
+    .btime{margin-top:7px;padding-top:5px}
+    .bpass{padding:8px 12px}
+    .bnote{margin-top:9px}
+    .cbox{padding:5px 14px}
+    .cblank{padding:5px 8px}
+    .bq{margin-top:13px}
+    /* flowing question sheet: fill each printed page, never strand a header */
+    .qsheet .bq{break-inside:auto}
+    .qsheet .bqh{break-after:avoid;break-inside:avoid}
+    .qsheet ol.bnum>li{break-inside:avoid}
+    .bqh{padding-bottom:4px}
+    ol.bnum li{margin:7px 0}
+    .bopt{gap:3px 22px}
+    .bor{margin:10px 0}
+    .bfoot{margin-top:18px;padding-top:7px}
+    .bcredit{margin-top:6px}
+    .bpage > .wmstamp{display:none}
+    .wmprint{display:flex;position:fixed;inset:0;z-index:5;align-items:center;justify-content:center;pointer-events:none;overflow:hidden}
+    .wmprint img{width:74%;max-width:600px;opacity:.19;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .sheet table.st th,.sheet table.st td{padding:5px 7px}
+    .keysheet .sq.key > b:first-child{padding:8px}
+    .keysheet div.smut{margin-top:14px}
+    .keysheet ol > li{margin:7px 0}
+    .keysheet ul.kpts li{margin:4px 0}
+    .keysheet .stopper{padding:8px 12px}
+    /* Compact print (optional toggle above the Print button): the old dense
+       sizes for saving paper. Off by default — default print = screen size. */
+    .compact-print.sheet{font-size:12px}
+    .compact-print .sq{font-size:12px}
+    .compact-print .smut{font-size:11px}
+    .compact-print.sheet table.st,.compact-print .sheet table.st{font-size:12px}
+    .compact-print .stopper{font-size:11px}
+    .compact-print .btop{font-size:11.5px}
+    .compact-print .seatline{font-size:11px}
+    .compact-print .seats i{width:16px;height:19px}
+    .compact-print .bh0{font-size:9.5px}
+    .compact-print .bh1{font-size:17px}
+    .compact-print .bh2{font-size:13.5px}
+    .compact-print .bh3{font-size:12.5px}
+    .compact-print .btime{font-size:12.5px}
+    .compact-print .bpass,.compact-print .bdiag{font-size:12px}
+    .compact-print .bnote{font-size:11.5px;line-height:1.5}
+    .compact-print .cbox{font-size:12.5px}
+    .compact-print .cblank{font-size:11.5px}
+    .compact-print .bq{font-size:12.8px;line-height:1.58}
+    .compact-print .bqh{font-size:13.2px}
+    .compact-print .bopt{font-size:12px}
+    .compact-print .bor{font-size:13.5px}
+    .compact-print .bfoot{font-size:10px}
+    .compact-print .bcredit{font-size:9.5px}
+    .compact-print .btop .bcredits{font-size:9px}
+    .compact-print .keysheet{font-size:12.5px}
+    .compact-print .keysheet .sq.key > b:first-child{font-size:14.5px}
+    .compact-print .keysheet div.smut{font-size:13px}
+    .compact-print .keysheet .stopper{font-size:12px}
+    .compact-print .keysheet table.st{font-size:12px}
+  }
+  /* KaTeX maths (professional notation): type matches surrounding text.
+     body-qualified to beat the CDN stylesheet's equal-specificity rules. */
+  body .katex{font-size:1.22em;color:inherit}
+  body .katex-display{margin:8px 0;overflow-x:auto;overflow-y:hidden;padding:2px}
+  body .mx-pend{border-bottom:1px dotted #94a3b8}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo">🎓</div>
+      <div>
+        <h1>ECC Classroom · Maharashtra Board Class 10</h1>
+        <p>English Medium · Science · Maths · SST · English · Board-pattern practice</p>
+      </div>
+    </div>
+    <div class="pillrow">
+      <span class="pill">🔥 Streak <b id="streakEl">0</b></span>
+      <span class="pill">⭐ XP <b id="xpEl">0</b></span>
+      <span class="pill">🎯 Boards <b id="countEl">…</b></span>
+    </div>
+  </div>
+
+  <div class="tabs noprint" id="tabsCtn">
+    <button class="tab active" data-t="dash">🏠 Dashboard</button>
+    <button class="tab" data-t="learn">📖 Learn</button>
+    <button class="tab" data-t="prac">✍️ Practice</button>
+    <button class="tab" data-t="mock">⏱️ Mock Test</button>
+    <button class="tab" data-t="flash">🃏 Flashcards</button>
+    <button class="tab" data-t="form">🧪 Formulas</button>
+    <button class="tab" data-t="papers">📄 Papers Guide</button>
+  </div>
+
+  <div class="sec active" id="sec-dash"></div>
+  <div class="sec" id="sec-learn"></div>
+  <div class="sec" id="sec-prac"></div>
+  <div class="sec" id="sec-mock"></div>
+  <div class="sec" id="sec-flash"></div>
+  <div class="sec" id="sec-form"></div>
+  <div class="sec" id="sec-papers"></div>
+
+  <div class="foot">Made for Maharashtra SSC (English Medium) preparation · progress saves on this device · Science-II paper pattern follows the Shaalaa board-paper style you linked.</div>
+</div>
+
+<div id="printPaper" hidden></div>
+
+<script async src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" onload="if(window.__katexReady)window.__katexReady()"></script>
+<script src="src/data-sci.js"></script>
+<script src="src/data-maths.js"></script>
+<script src="src/data-ssteng.js"></script>
+<script src="src/data-keys.js"></script>
+<script src="src/data-mastery.js"></script>
+<script src="src/data-mastery-p1.js"></script>
+<script src="src/data-lesson-purity.js"></script>
+<script src="src/data-english.js"></script>
+<script src="src/app.js"></script>
+
+</body>
+</html>
